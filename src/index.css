@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/*[#BB7541] to-[#A85C42]*/
+
+.text-gradient {
+  background: linear-gradient(90deg, #BB7541, #F5E1C3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #BB7541, #948775);
+}
+
+.border-gradient {
+  border-image: linear-gradient(135deg, #BB7541, #F5E1C3) 1;
+}
+
+.text-shadow {
+  filter: drop-shadow(2px 3px 5px #000000);
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-glow-white {
+  animation: glowWhite 2s ease-in-out infinite alternate;
+}
+
+.animate-glow-white-img {
+  animation: glowWhiteIMG 2s ease-in-out infinite alternate;
+}
+
+.animate-pulse-button {
+  animation: pulseButton 2s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 12s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px hsl(26, 48%, 39%, 0.0),
+                 0 0 20px hsl(26, 48%, 39%, 0.2),
+                 0 0 30px hsl(26, 48%, 39%, 0.4);
+  }
+  to {
+    text-shadow: 0 0 20px hsl(26, 48%, 39%, 100),
+                 0 0 30px hsl(26, 48%, 39%, 0.8),
+                 0 0 40px hsl(26, 48%, 39%, 0.4);
+  }
+}
+
+@keyframes glowWhite {
+  from {
+    text-shadow: 0 0 10px hsla(0, 0%, 100%, 0),
+                 0 0 20px hsla(0, 0%, 100%, 0.2),
+                 0 0 30px hsla(0, 0%, 100%, 0.4);
+  }
+  to {
+    text-shadow: 0 0 20px hsla(0, 0%, 100%, 1),
+                 0 0 30px hsla(0, 0%, 100%, 0.8),
+                 0 0 40px hsla(0, 0%, 100%, 0.4);
+  }
+}
+
+@keyframes glowWhiteIMG {
+  from {
+    box-shadow: 0 0 10px hsla(0, 0%, 100%, 0),
+                 0 0 20px hsla(0, 0%, 100%, 0.2),
+                 0 0 30px hsla(0, 0%, 100%, 0.4);
+  }
+  to {
+    box-shadow: 0 0 20px hsla(0, 0%, 100%, 0.5),
+                 0 0 30px hsla(0, 0%, 100%, 0.4),
+                 0 0 40px hsla(0, 0%, 100%, 0.3);
+  }
+}
+
+@keyframes pulseButton {
+  0%, 100% {
+    box-shadow: 0 0 20px #BB7541;
+  }
+  50% {
+    box-shadow: 0 0 40px #A85C42;
+  }
+}
+
+.animate-glow[class*="shadow"] {
+  animation: glowBorder 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowBorder {
+  from {
+    box-shadow: 0 0 20px rgba(187, 117, 65, 0.5),
+                0 0 30px rgba(187, 117, 65, 0.3),
+                0 0 40px rgba(187, 117, 65, 0.2);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(187, 117, 65, 0.8),
+                0 0 50px rgba(187, 117, 65, 0.5),
+                0 0 70px rgba(187, 117, 65, 0.3);
+  }
+}
+
+/* Animação float apenas em telas large (1024px+) */
+@media (min-width: 1024px) {
+  .animate-float-slow-lg {
+    animation: float 12s ease-in-out infinite;
+  }
+  
+  .animate-float-lg {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow-white-lg {
+    animation: glowWhite 2s ease-in-out infinite alternate;
+  }
+}
