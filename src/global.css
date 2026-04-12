@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: sdReveal 0.7s ease forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 12s ease-in-out infinite;
+}

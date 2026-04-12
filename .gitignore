@@ -1,3 +1,10 @@
+# Worflow (somente na branch dev)
+github
+.github
+.github/
+./github/worflows/
+.github/workflows/deploy.yml
+
 # Logs
 logs
 *.log

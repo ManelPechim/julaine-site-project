@@ -12,7 +12,7 @@ const testimonials = [
   }
 ];
 
-export function Testimonials() {
+export default function Testimonials() {
   return (
     <section className="py-10 md:py-20 bg-gradient-to-b from-[#0A0A0A] to-[#1A1008] relative overflow-hidden">
       {/* Decorative gradient */}

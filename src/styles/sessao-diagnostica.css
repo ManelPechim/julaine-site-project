@@ -1,0 +1,42 @@
+/* Estilos exclusivos da página de Sessão Diagnóstica */
+
+.sd-gradient {
+  background: linear-gradient(120deg, #4F6F63 0%, #5B4A3E 68%, #8B0000 160%);
+}
+
+.sd-title-font {
+  font-family: "Playfair Display", serif;
+}
+
+.sd-body-font {
+  font-family: "Lato", sans-serif;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: sdReveal 0.7s ease forwards;
+}
+
+.sd-delay-1 {
+  animation-delay: 0.06s;
+}
+
+.sd-delay-2 {
+  animation-delay: 0.14s;
+}
+
+.sd-delay-3 {
+  animation-delay: 0.22s;
+}
+
+.sd-delay-4 {
+  animation-delay: 0.3s;
+}
+
+@keyframes sdReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

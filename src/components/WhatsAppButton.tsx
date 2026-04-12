@@ -1,0 +1,33 @@
+import { ArrowRight, MessageCircle } from "lucide-react";
+
+const whatsappText = encodeURIComponent(
+  "Olá, Julaine! Quero agendar minha Sessão Diagnóstica e saber os próximos horários disponíveis."
+);
+
+const WHATSAPP_URL = `https://wa.me/5543999637029?text=${whatsappText}`;
+
+type WhatsAppButtonProps = {
+  label: string;
+  variant?: "solid" | "light";
+  className?: React.ReactNode;
+};
+
+export default function WhatsAppButton({ label, variant = "solid", className }: WhatsAppButtonProps) {
+  const isLight = variant === "light";
+
+  return (
+    <a
+      href={WHATSAPP_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5 ${isLight
+        ? "bg-[#7A9B8E] text-[#F6F2EB] hover:bg-[#4F6F63]"
+        : "bg-[#4F6F63] text-[#E8DED4] hover:bg-[#5B4A3E]"
+        } ${className}`}
+    >
+      <MessageCircle className="h-4 w-4" />
+      <span>{label}</span>
+      <ArrowRight className="h-4 w-4" />
+    </a>
+  );
+}

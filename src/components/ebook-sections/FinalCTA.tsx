@@ -4,7 +4,7 @@ const scrollToPricing = () => {
   document.getElementById('pricing')?.scrollIntoView({ behavior: "smooth" });
 };
 
-export function FinalCTA() {
+export default function FinalCTA() {
   return (
     <section className="py-15 md:py-20 bg-[#0A0A0A] relative overflow-hidden">
       {/* Background gradient */}

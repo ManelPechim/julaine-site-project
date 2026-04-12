@@ -1,8 +1,8 @@
 import { Instagram, Mail, Phone } from 'lucide-react';
-import Logo from '../ui/Logo';
-import InstagramLink from '../ui/InstagramLink';
+import Logo from './ui/Logo';
+import InstagramLink from './ui/InstagramLink';
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-[#0A0A0A] border-t border-[#E7C19A]/10 py-16">
       <div className="max-w-7xl mx-auto px-6">
