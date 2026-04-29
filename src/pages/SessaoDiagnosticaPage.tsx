@@ -1,68 +1,32 @@
 import "../styles/sessao-diagnostica.css";
 import { Analytics } from "@vercel/analytics/react";
-import Hero from "../components/sd-sections/Hero";
-import IdentifingProblem from "../components/sd-sections/IdentifingProblem";
-import Explanation from "../components/sd-sections/Explanation";
-import Author from "../components/sd-sections/Author";
-import HowItWorkds from "../components/sd-sections/HowItWorks";
-import ForWho from "../components/sd-sections/ForWho";
-import ImportantFinalInvite from "../components/sd-sections/ImportantFinalInvite";
+import Hero from "../layouts/sd-sections/Hero";
+import IdentifingProblem from "../layouts/sd-sections/IdentifingProblem";
+import Explanation from "../layouts/sd-sections/Explanation";
+import Author from "../layouts/sd-sections/Author";
+import HowItWorks from "../layouts/sd-sections/HowItWorks";
+import ImportantFinalInvite from "../layouts/sd-sections/ImportantFinalInvite";
 import Seo from "../components/Seo";
-
-/*
-const reflectionQuestions = [
-  "Por que parece que estou sempre ocupada, mas sem avançar?",
-  "Por que começo coisas e não consigo sustentar?",
-  "Por que sinto que tenho potencial, mas ainda não estou vivendo ele?",
-];
-*/
-
-/*
-const discoveries = [
-  "Padrões emocionais repetidos.",
-  "Crenças que limitavam decisões.",
-  "Hábitos que estavam travando seu crescimento.",
-  "Novas possibilidades de direção para a vida.",
-];
-*/
-
-/*
-const testimonials = [
-  {
-    name: "Marina, 34 anos",
-    image: "/testimonial-1.jpg",
-    text: "Saí da sessão com uma clareza que eu não sentia havia muito tempo. Em poucos dias, consegui tomar decisões que eu vinha adiando há meses.",
-  },
-  {
-    name: "Patrícia, 41 anos",
-    image: "/testimonial-2.jpg",
-    text: "A conversa me ajudou a enxergar padrões emocionais que estavam travando minha evolução. Foi leve, profundo e muito prático.",
-  },
-  {
-    name: "Renata, 29 anos",
-    image: "/testimonial-3.PNG",
-    text: "Entrei confusa e sobrecarregada, e saí com direção. Foi um divisor de águas para organizar minha rotina e meus objetivos.",
-  },
-];
-*/
+import Testimonials from "../layouts/sd-sections/Testimonials";
 
 export default function SessaoDiagnosticaPage() {
+  
   return (
     <main className="sd-body-font min-h-screen bg-[#F6F2EB] text-[#5B4A3E]">
       <Seo
         title="Sessão Diagnóstica | Julaine Guimarães"
-        description="Conversa estrategica de 40-45 minutos para gerar clareza emocional, direcao de vida e proximos passos praticos."
+        description="Conversa estratégica de 40-45 minutos para gerar clareza emocional, direção de vida e próximos passos práticos."
       />
       <Analytics />
 
-      <Hero />
-      <IdentifingProblem />
-      <Explanation />
-      <Author />
-      <HowItWorkds />
-      <ForWho />
-      <ImportantFinalInvite />
-
+      <Hero /> {/* 1. Hero — headline forte + foto + features */}
+      <IdentifingProblem /> {/* 2. Identificação — dores + reflexão */}
+      <Explanation />{/* 3. Explicação — o que é + checklist */}
+      <Testimonials />
+      <Author /> {/* 4. Autoridade — bio da Julaine */}
+      <HowItWorks /> {/* 5. Como funciona — 4 passos */}
+      {/* <ForWho />{/* 6. Para quem é / não é } */}
+      <ImportantFinalInvite /> {/* 7. Escassez + CTA final */}
 
       {/* <section className="py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -87,7 +51,6 @@ export default function SessaoDiagnosticaPage() {
           </div>
         </div>
       </section> */}
-
 
       {/* <section className="py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-6">
@@ -125,37 +88,7 @@ export default function SessaoDiagnosticaPage() {
         </div>
       </section> */}
 
-      {/* <section className="py-16 md:py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="reveal sd-delay-1">
-            <SectionTitle
-              label="Depoimentos"
-              title="Relatos de quem já passou por essa conversa"
-              description="Experiências reais de mulheres que encontraram mais clareza, direção e confiança após a sessão diagnóstica."
-            />
-          </div>
-
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
-            {testimonials.map((item, index) => (
-              <article
-                key={item.name}
-                className={`reveal overflow-hidden rounded-3xl border border-[#E8E2D9] bg-[#FDFCFB] sd-delay-${(index % 4) + 1}`}
-              >
-                <img src={item.image} alt={item.name} className="h-56 w-full object-cover" />
-                <div className="p-6">
-                  <div className="mb-3 flex items-center gap-1 text-[#C8A96A]">
-                    {Array.from({ length: 5 }).map((_, starIndex) => (
-                      <Star key={`${item.name}-${starIndex}`} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-sm leading-relaxed md:text-base">{item.text}</p>
-                  <p className="mt-4 text-sm font-semibold text-[#4F6F63]">{item.name}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section> */}
+      
     </main>
   );
 }

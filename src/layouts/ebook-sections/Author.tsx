@@ -1,5 +1,5 @@
 import { CheckCircle2, Instagram } from 'lucide-react';
-import InstagramLink from '../ui/InstagramLink';
+import InstagramLink from '../../components/ui/InstagramLink';
 
 const credentials = [
   "Especialista em Desenvolvimento Humano Integral",

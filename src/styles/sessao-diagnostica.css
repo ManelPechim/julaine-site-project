@@ -4,6 +4,17 @@
   background: linear-gradient(120deg, #4F6F63 0%, #5B4A3E 68%, #8B0000 160%);
 }
 
+.sd-text-gradient {
+  background: linear-gradient(120deg, #4F6F63 0%, #5B4A3E 68%, #8B0000 160%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sd-border-gradient {
+  border-image: linear-gradient(120deg, #4F6F63 0%, #5B4A3E 68%, #8B0000 160%) 1;
+}
+
 .sd-title-font {
   font-family: "Playfair Display", serif;
 }

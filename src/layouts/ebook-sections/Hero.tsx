@@ -1,4 +1,5 @@
-import { ArrowDown, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import ScrollIndicator from '../../components/ui/Scroll-Indicator';
 // import { useState, useEffect } from 'react';
 
 const scrollToPricing = () => {
@@ -8,10 +9,6 @@ const scrollToPricing = () => {
 const scrollToTransformation = () => {
   document.getElementById('transformation')?.scrollIntoView({ behavior: "smooth" });
 };
-
-const scrollToPainPoints = () => {
-  document.getElementById('pain-points')?.scrollIntoView({ behavior: "smooth" });
-}
 
 // // Configure a data final aqui (ano, mês-1, dia, hora, minuto, segundo)
 // const END_DATE = new Date(2026, 2, 15, 23, 59, 59); // 15 de março de 2026 às 23:59:59
@@ -152,13 +149,10 @@ export default function Hero() {
           
         </div>
 
-         {/* Scroll Indicator */}
-        <div 
-          className="flex items-center justify-self-center lg:absolute z-10 p-[7px] lg:top-12/13 lg:left-1/2 lg:-translate-x-1/2 border-[#E7C19A] border-2 rounded-4xl text-[#E7C19A] animate-bounce hover:bg-[#A85C42] hover:border-[#A85C42] ease-in-out transition-all cursor-pointer"
-          onClick={scrollToPainPoints}
-        >
-          <ArrowDown className="w-5 h-5 lg:w-6 lg:h-6 " />
-        </div>
+        {/* Scroll Indicator */}
+        <ScrollIndicator 
+          scrollTo='pain-points'
+          className='border-[#E7C19A] text-[#E7C19A] hover:bg-[#A85C42] hover:border-[#A85C42] '/>  
 
         {/* E-book Cover */}
         <div className='relative w-60 h-80 md:w-[280px] lg:w-[450px] justify-center items-center flex -z-10 animate-float-slow '>          

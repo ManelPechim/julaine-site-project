@@ -1,4 +1,5 @@
 import { Quote } from 'lucide-react';
+import TestimonialsPrints from '../../components/TestimonialsPrints';
 
 const testimonials = [
   {
@@ -40,36 +41,10 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-6 ">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="grid flex-col items-start justify-center p-4 lg:p-8 bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] rounded-2xl hover:scale-105 border border-[#E7C19A]/20 hover:border-[#E7C19A]/40 transition-all duration-300 group"
-            >
-              {/* Quote Icon */}
-              <div className='flex justify-between'>
-                <div className="mb-6">
-                  <Quote className="w-8 h-8 lg:w-10 lg:h-10 text-[#E7C19A]/30 group-hover:text-[#E7C19A]/50 transition-colors" />
-                </div>
-
-                <div className="mb-6">
-                  <Quote className="w-8 h-8 lg:w-10 lg:h-10 text-[#E7C19A]/30 group-hover:text-[#E7C19A]/50 transition-colors rotate-180" />
-                </div>
-              </div>
-
-              {/* Testimonial IMG & Author  */}
-              <div>
-                {testimonial.image && (
-                  <img 
-                    src={testimonial.image} 
-                    className="object-cover rounded-xl animate-glow-white-img"
-                  />
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+        <TestimonialsPrints 
+          bgClass="bg-gradient-to-br from-[#1A1A1A] to-[#0F0F0F] border border-[#E7C19A]/20 hover:border-[#E7C19A]/40"
+          quote='text-[#E7C19A]/30 group-hover:text-[#E7C19A]/50'
+        />
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ interface LogoProps {
 const Logo = ({ className }: LogoProps) => {
   return (
     <div className={className}>
-      <img src="/logoju-white.png" />
+      <img src="/logoju-white.png" alt="Logo Julaine Guimaraes" />
     </div>
   );
 }

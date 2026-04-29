@@ -7,10 +7,15 @@ type SectionTitleProps = {
   center?: boolean;
 };
 
-export const SectionTitle = ({ label, title, description, center = false }: SectionTitleProps) => {
+export const SectionTitle = ({
+  label,
+  title,
+  description,
+  center = false,
+}: SectionTitleProps) => {
   return (
     <div className={`${center ? "mx-auto max-w-3xl text-center" : "max-w-3xl"}`}>
-      <p className="mb-3 inline-flex items-center gap-2 rounded-full border bg-[#7A9B8E] text-white px-4 py-2 text-xs font-bold uppercase tracking-[0.16em]">
+      <p className="mb-3 inline-flex items-center gap-2 rounded-full border-2 border-[#C8A96A] bg-[#7A9B8E] px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] text-white">
         <Leaf className="h-3.5 w-3.5" />
         {label}
       </p>
@@ -18,8 +23,10 @@ export const SectionTitle = ({ label, title, description, center = false }: Sect
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-base leading-relaxed text-[#8A8077] md:text-lg">{description}</p>
+        <p className="mt-4 text-base leading-relaxed text-[#8A8077] md:text-lg">
+          {description}
+        </p>
       ) : null}
     </div>
   );
-}
+};

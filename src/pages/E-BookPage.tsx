@@ -1,13 +1,13 @@
 import "../styles/ebook.css";
 import { Analytics } from "@vercel/analytics/react";
-import Hero from "../components/ebook-sections/Hero";
-import PainPoints from "../components/ebook-sections/PainPoints";
-import Transformation from "../components/ebook-sections/Transformation";
-import Benefits from "../components/ebook-sections/Benefits";
-import Testimonials from "../components/ebook-sections/Testimonials";
-import Author from "../components/ebook-sections/Author";
-import Pricing from "../components/ebook-sections/Pricing";
-import FinalCTA from "../components/ebook-sections/FinalCTA";
+import Hero from "../layouts/ebook-sections/Hero";
+import PainPoints from "../layouts/ebook-sections/PainPoints";
+import Transformation from "../layouts/ebook-sections/Transformation";
+import Benefits from "../layouts/ebook-sections/Benefits";
+import Testimonials from "../layouts/ebook-sections/Testimonials";
+import Author from "../layouts/ebook-sections/Author";
+import Pricing from "../layouts/ebook-sections/Pricing";
+import FinalCTA from "../layouts/ebook-sections/FinalCTA";
 import Seo from "../components/Seo";
 
 export default function EbookPage () {

@@ -45,9 +45,7 @@ export default function NavHeader() {
               className={({ isActive }) =>
                 [
                   "px-3 py-2 border-b-2 text-sm uppercase tracking-wide transition-colors lg:px-4",
-                  isActive
-                    ? "border-[#C8A96A] text-[#C8A96A]"
-                    : "border-transparent text-white hover:text-[#C8A96A]",
+                  isActive ? "border-[#C8A96A] text-[#C8A96A]" : "border-transparent text-white hover:text-[#C8A96A]",
                 ].join(" ")
               }
             >
@@ -94,9 +92,7 @@ export default function NavHeader() {
                 className={({ isActive }) =>
                   [
                     "rounded-md border-l-2 px-3 py-2 text-sm uppercase tracking-wide transition-colors",
-                    isActive
-                      ? "border-[#C8A96A] bg-[#C8A96A]/10 text-[#C8A96A]"
-                      : "border-transparent text-[#E8DED4] hover:bg-[#C8A96A]/10 hover:text-[#C8A96A]",
+                    isActive ? "border-[#C8A96A] bg-[#C8A96A]/10 text-[#C8A96A]" : "border-transparent text-[#E8DED4] hover:bg-[#C8A96A]/10 hover:text-[#C8A96A]",
                   ].join(" ")
                 }
               >
