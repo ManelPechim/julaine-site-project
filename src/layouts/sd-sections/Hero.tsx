@@ -1,5 +1,5 @@
-import { BookCopy, SparkleIcon, Sparkles, Star } from "lucide-react";
-import WhatsAppButton from "../../components/WhatsappButton";
+import { BookCopy, Sparkles, Star } from "lucide-react";
+import WhatsAppButton from "../../components/WhatsAppButton";
 import ScrollIndicator from "../../components/ui/Scroll-Indicator";
 
 const heroHighlights = [
@@ -9,7 +9,7 @@ const heroHighlights = [
   },
   {
     num: "2005",
-    label: "educadora desde",
+    label: "atuando desde",
   },
   {
     num: "100%",
@@ -18,9 +18,9 @@ const heroHighlights = [
 ];
 
 const sessionFeatures = [
-  "Compreensão dos padrões emocionais que podem estar travando seus avanços.",
-  "Clareza sobre prioridades, sonhos e direção prática para o seu próximo ciclo.",
-  "Direcionamento inicial para construir uma rotina mais alinhada com quem você é.",
+  "Entender o que está travando seu avanço hoje.",
+  "Sair com clareza sobre prioridades e próximos passos.",
+  "Receber um direcionamento inicial para decidir com mais segurança.",
 ];
 
 export default function Hero() {
@@ -55,19 +55,19 @@ export default function Hero() {
           {/* subheadline */}
           <p className="mb-3 text-base leading-relaxed text-[#8A8077] md:text-lg">
             Uma conversa estratégica de{" "}
-            <strong className="text-[#5B4A3E]">45 minutos</strong> para mulheres
-            que desejam clareza emocional, direção de vida e novos caminhos de
-            crescimento pessoal e profissional.
+            <strong className="text-[#5B4A3E] underline underline-offset-3">45 minutos</strong> para mulheres
+            que querem entender o que está travando sua vida, organizar pensamentos
+            e sair com um próximo passo claro.
           </p>
 
           {/* social proof quote */}
-          <p className="flex items-center gap-1 mb-8 text-sm italic text-[#7A9B8E] underline underline-offset-4">
-            <Star className="h-5 w-5 text-[#C8A96A]" />
-            Muitas mulheres saem dessa sessão com uma clareza que não tinham há anos.
+          <p className="flex items-center gap-1 mb-8 text-[13px] italic text-[#7A9B8E] underline underline-offset-4">
+            <Star className="h-5 w-10 text-[#C8A96A]" />
+            Muitas mulheres saem dessa sessão com uma clareza que não conseguiam encontrar sozinhas. No fim, todo mundo precisa de direção.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap md:flex-nowrap md:text-nowrap items-center gap-4">
             <WhatsAppButton label="Quero agendar minha sessão" />
             {/* <button
               onClick={() => document.getElementById("more")?.scrollIntoView({ behavior: 'smooth' })}
@@ -81,7 +81,7 @@ export default function Hero() {
               className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 ring-1 ring-[#C8A96A]/40 bg-[#5B4A3E] text-white text-sm font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5"
             >
               <BookCopy className="h-4 w-4" />
-              Saiba mais
+              Quero entender se é para mim
             </button>
           </div>
 
@@ -103,7 +103,7 @@ export default function Hero() {
         />
 
         {/* ── RIGHT: photo + feature card ── */}
-        <div className="relative flex justify-center self-center md:justify-end md:self-end mb-5 md:mb-0">
+        <div className="relative flex justify-center self-center lg:justify-end lg:self-end mb-5 md:mb-0">
           {/* main photo */}
           <div className="relative w-full max-w-sm overflow-hidden rounded-t-3xl border border-b-0 border-[#CBBFAF]/60 shadow-[0_-8px_48px_rgba(79,111,99,0.14)] lg:max-w-md">
             <img

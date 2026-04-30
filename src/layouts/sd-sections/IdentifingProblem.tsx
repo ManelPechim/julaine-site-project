@@ -5,19 +5,19 @@ const iconClass: string = "mt-1 h-4 w-4 shrink-0 text-[#7A9B8E]";
 const painPoints = [
   {
     icon: <CircleOff className={`${iconClass}`} />,
-    item: "Sente que poderia realizar muito mais, mas algo sempre impede.",
+    item: "Sente que poderia avançar muito mais, mas algo sempre freia suas decisões.",
   },
   {
     icon: <Shuffle className={`${iconClass}`} />,
-    item: "Tem muitos pensamentos e emoções misturados e não sabe por onde começar.",
+    item: "Tem pensamentos e emoções misturados e não sabe por onde começar.",
   },
   {
     icon: <RefreshCcw className={`${iconClass}`} />,
-    item: "Vive ocupada, mas sem sentir progresso real.",
+    item: "Vive ocupada, resolve tudo para todos, mas sente pouco progresso na própria vida.",
   },
   {
     icon: <Map className={`${iconClass}`} />,
-    item: "Tem sonhos importantes, mas sente dificuldade em transformá-los em plano de ação.",
+    item: "Tem sonhos importantes, mas trava na hora de transformar vontade em plano de ação.",
   },
   {
     icon: <Compass className={`${iconClass}`} />,
@@ -25,7 +25,7 @@ const painPoints = [
   },
   {
     icon: <HeartHandshake className={`${iconClass}`} />,
-    item: "Coloca as necessidades de todos à frente das suas e, no fim do dia, sente que não fez nada por si mesma.",
+    item: "Coloca as necessidades de todos à frente das suas e termina o dia com a sensação de que não cuidou de si.",
   },
 ];
 
@@ -36,13 +36,13 @@ export default function IdentifingProblem() {
         <div className="reveal sd-delay-1">
           <SectionTitle
             label="Identificação com o problema"
-            title="Talvez você esteja vivendo algo assim"
-            description="Muitas mulheres inteligentes e capazes vivem esse momento: sabem que têm potencial, mas se sentem presas em padrões emocionais, excesso de responsabilidades ou falta de clareza sobre qual caminho seguir."
+            title="Talvez o problema não seja falta de capacidade"
+            description="Muitas mulheres inteligentes e capazes vivem esse momento: têm potencial, mas estão cansadas de decidir no escuro, carregar tudo sozinhas e repetir padrões que drenam energia."
           />
         </div>
 
         {/* Divider line */}
-        <div className="mt-4 h-0.5 w-full bg-gradient-to-r from-[#C8A96A] to-transparent" />
+        <div className="mt-4 h-0.5 w-full bg-linear-to-r from-[#C8A96A] to-transparent" />
 
         <ul className="mt-10 grid gap-4 md:grid-cols-2 justify">
           {painPoints.map(({ icon, item }) => (

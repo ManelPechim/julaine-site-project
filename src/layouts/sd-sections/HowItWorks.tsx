@@ -1,31 +1,31 @@
 import { CalendarCheck, Clock3, Compass, Video } from "lucide-react";
 import { SectionTitle } from "../../components/SectionTitle";
-import WhatsAppButton from "../../components/WhatsappButton";
+import WhatsAppButton from "../../components/WhatsAppButton";
 
 const processSteps = [
   {
     icon: CalendarCheck,
     title: "Você solicita sua sessão",
     description:
-      "Clique no botão de agendamento e entre em contato pelo WhatsApp.",
+      "Clique no botão de agendamento e chame no WhatsApp para verificar os horários disponíveis.",
   },
   {
     icon: Clock3,
     title: "Escolhe um horário disponível",
     description:
-      "Você recebe opções de agenda e seleciona o melhor horário para você.",
+      "Você recebe as opções de agenda e escolhe o melhor horário para a sua rotina.",
   },
   {
     icon: Video,
     title: "Participa da conversa online",
     description:
-      "Sessão de aproximadamente 40 a 45 minutos, com foco total no seu momento.",
+      "Sessão de aproximadamente 40 a 45 minutos, com foco total no seu momento e na sua demanda real.",
   },
   {
     icon: Compass,
     title: "Recebe direcionamento inicial",
     description:
-      "Você sai com mais clareza sobre próximos passos e possibilidades de crescimento.",
+      "Você sai com mais clareza sobre o que fazer agora e o que pode esperar para os próximos passos.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function HowItWorks() {
         <div className="reveal sd-delay-1">
           <SectionTitle
             label="Como funciona"
-            title="Um processo simples, direto e acolhedor"
+            title="Um processo simples, direto, acolhedor e sem enrolação"
           />
         </div>
 

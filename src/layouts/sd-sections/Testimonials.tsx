@@ -8,13 +8,13 @@ const Testimonials = () => {
         <div className="reveal sd-delay-1">
           <SectionTitle
             label="Depoimentos"
-            title="Relatos de quem já passou por essa conversa"
-            description="Experiências reais de mulheres que encontraram mais clareza, direção e confiança após a sessão diagnóstica."
+            title="Relatos de quem já saiu com mais clareza"
+            description="Experiências reais de mulheres que chegaram confusas e saíram com mais direção, segurança e vontade de agir depois da sessão."
           />
         </div>
 
         {/* Divider line */}
-        <div className="h-0.5 w-full bg-gradient-to-r from-[#C8A96A] to-transparent" />
+        <div className="h-0.5 w-full bg-linear-to-r from-[#C8A96A] to-transparent" />
 
         <TestimonialsPrints
           bgClass="bg-[#E8DED4] border-2 border-[#CBBFAF] hover:border-[#7A9B8E]"

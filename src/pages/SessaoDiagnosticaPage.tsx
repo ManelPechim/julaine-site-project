@@ -15,7 +15,7 @@ export default function SessaoDiagnosticaPage() {
     <main className="sd-body-font min-h-screen bg-[#F6F2EB] text-[#5B4A3E]">
       <Seo
         title="Sessão Diagnóstica | Julaine Guimarães"
-        description="Conversa estratégica de 40-45 minutos para gerar clareza emocional, direção de vida e próximos passos práticos."
+        description="Sessão diagnóstica online de 45 minutos para mulheres que querem clareza emocional, direção de vida e um próximo passo real para sair da confusão."
       />
       <Analytics />
 

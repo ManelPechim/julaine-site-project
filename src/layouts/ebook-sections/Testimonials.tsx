@@ -1,17 +1,4 @@
-import { Quote } from 'lucide-react';
 import TestimonialsPrints from '../../components/TestimonialsPrints';
-
-const testimonials = [
-  {
-    image: "/testimonial-1.jpg"
-  },
-  {
-    image: "/testimonial-2.jpg"
-  },
-  {    
-    image: "/testimonial-3.PNG"
-  }
-];
 
 export default function Testimonials() {
   return (

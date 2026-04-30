@@ -1,5 +1,5 @@
-import { CalendarCheck, Clock } from "lucide-react";
-import WhatsAppButton from "../../components/WhatsappButton";
+import { CalendarCheck } from "lucide-react";
+import WhatsAppButton from "../../components/WhatsAppButton";
 
 export default function ImportantFinalInvite() {
   return (
@@ -48,26 +48,26 @@ export default function ImportantFinalInvite() {
 
           {/* Headline */}
           <h2 className="sd-title-font mb-5 text-3xl leading-tight md:text-5xl">
-            Se você sente que chegou o momento de olhar para sua vida com mais
-            clareza, essa conversa pode ser o primeiro passo.
+            Se você sente que chegou a hora de parar de adiar a própria vida,
+            essa conversa pode ser o primeiro passo.
           </h2>
 
           <p className="mx-auto mb-2 max-w-2xl text-sm leading-relaxed text-[#E8DED4]/80 md:text-lg">
             Reserve seu horário para uma sessão de autoconhecimento, direção e
-            tomada de decisão consciente.
+            tomada de decisão consciente com foco no que realmente importa agora.
           </p>
           <p className="mb-8 text-sm italic text-[#CBBFAF]/70">
-            Às vezes, um novo caminho começa com uma única conversa.
+            Às vezes, um novo caminho começa quando você para de tentar resolver tudo sozinha.
           </p>
 
           <WhatsAppButton
-            label="Quero agendar minha sessão"
+            label="Quero garantir minha vaga"
             variant="light"
-            className="mt-2"
+            className="mt-2 uppercase"
           />
 
-          <p className="mt-6 text-xs text-[#E8DED4]/40">
-            Horários limitados · Atendimento online · 100% ao vivo
+          <p className="mt-6 text-xs text-[#E8DED4]">
+            Atendimento online · 100% ao vivo <span className="text-[#E8DED4] uppercase">· poucas vagas por semana</span>
           </p>
         </div>
       </section>

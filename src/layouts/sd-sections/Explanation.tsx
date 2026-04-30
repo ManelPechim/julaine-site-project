@@ -2,20 +2,20 @@ import { Check, Compass, Lightbulb, Search, Sprout } from "lucide-react";
 import { SectionTitle } from "../../components/SectionTitle";
 
 const sessionFocus = [
-  "Compreender o momento de vida que você está vivendo.",
-  "Identificar padrões emocionais que influenciam suas decisões.",
-  "Olhar para sonhos e objetivos com mais consciência.",
-  "Perceber hábitos e pensamentos que podem bloquear seus avanços.",
-  "Construir uma visão inicial sobre o próximo passo da sua jornada.",
+  "Entender com precisão o momento de vida que você está vivendo.",
+  "Identificar os padrões emocionais que mais influenciam suas decisões.",
+  "Olhar para seus sonhos e objetivos sem autoengano e sem culpa.",
+  "Perceber hábitos e pensamentos que estão bloqueando seus avanços.",
+  "Sair com uma visão inicial clara do próximo passo.",
 ];
 
 const size: string = "h-4.5 w-4.5"
 
 const discoveries = [
-  { icon: <Search className={size} />, label: "Padrões emocionais repetidos" },
-  { icon: <Lightbulb className={size} />, label: "Crenças que limitavam decisões" },
-  { icon: <Sprout className={size} />, label: "Hábitos que travavam o crescimento" },
-  { icon: <Compass className={size} />, label: "Novas possibilidades de direção" },
+  { icon: <Search className={size} />, label: "O que realmente está se repetindo" },
+  { icon: <Lightbulb className={size} />, label: "Crenças que ainda direcionam suas escolhas e que a limitam" },
+  { icon: <Sprout className={size} />, label: "Hábitos que travam seu crescimento" },
+  { icon: <Compass className={size} />, label: "Opções reais de direção para o próximo ciclo" },
 ];
 
 export default function Explanation() {
@@ -28,7 +28,7 @@ export default function Explanation() {
             <SectionTitle
               label="Explicação breve da sessão"
               title="O que é o Diagnóstico de Direção de Vida"
-              description="É uma conversa estratégica criada para ajudar você a enxergar seu momento de vida com mais clareza e identificar caminhos possíveis de crescimento."
+              description="É uma conversa estratégica para você enxergar sua realidade com mais clareza, nomear o que está te travando e sair com direção prática para os próximos passos."
             />
 
             {/* Divider line */}
@@ -37,8 +37,7 @@ export default function Explanation() {
             {/* Quote block */}
             <div className="mt-6 rounded-2xl border-l-4 border-[#C8A96A] bg-[#F6F2EB]/60 p-5">
               <p className="text-sm italic leading-relaxed text-[#5B4A3E] md:text-base">
-                "Não é apenas uma conversa: é um espaço de reflexão guiada e
-                direcionamento."
+                "Não é só desabafar: é sair da conversa com leitura, clareza e uma direção para mudar a sua vida."
               </p>
             </div>
 
@@ -59,7 +58,7 @@ export default function Explanation() {
           {/* Right column */}
           <div className="reveal sd-delay-2 rounded-3xl border border-[#CBBFAF] bg-[#F6F2EB]/50 p-6 md:p-8">
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.14em] text-[#4F6F63]">
-              Durante a sessão vamos
+              Durante a sessão, vamos olhar para
             </p>
             <ul className="space-y-4">
               {sessionFocus.map((focus, i) => (
@@ -78,7 +77,7 @@ export default function Explanation() {
             {/* Bottom note */}
             <div className="mt-8 rounded-xl bg-[#4F6F63]/8 border border-[#4F6F63]/20 p-4 text-center">
               <p className="text-xs leading-relaxed text-[#4F6F63] md:text-sm">
-                Às vezes, uma única conversa pode abrir uma nova forma de olhar para si mesma.
+                Uma boa conversa pode interromper meses de confusão e acelerar uma decisão que você já precisava tomar.
               </p>
             </div>
           </div>

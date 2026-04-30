@@ -1,6 +1,6 @@
 import { Check, X } from "lucide-react";
 import { SectionTitle } from "../../components/SectionTitle";
-import WhatsAppButton from "../../components/WhatsappButton";
+import WhatsAppButton from "../../components/WhatsAppButton";
 
 const forWho = [
   "Desejam desenvolver inteligência emocional.",

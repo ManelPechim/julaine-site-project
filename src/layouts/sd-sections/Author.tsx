@@ -19,8 +19,8 @@ export default function Author() {
           <div className="overflow-hidden rounded-3xl border-2 border-[#CBBFAF]/50 shadow-[0_16px_48px_rgba(0,0,0,0.25)]">
             <img
               src="/sd-author-img.JPG"
-              alt="Julaine Guimarães"
-              className="block h-[400px] w-full object-cover object-top md:h-[460px]"
+              alt="Julaine Guimarães, especialista em desenvolvimento humano integral"
+              className="block h-100 w-full object-cover object-top md:h-115"
             />
           </div>
 
@@ -49,7 +49,7 @@ export default function Author() {
           </p>
 
           {/* Divider line */}
-          <div className="mb-4 mt-4 h-0.5 w-full bg-gradient-to-r from-[#C8A96A] to-transparent" />
+          <div className="mb-4 mt-4 h-0.5 w-full bg-linear-to-r from-[#C8A96A] to-transparent" />
 
           <p className="text-sm leading-relaxed md:text-base">
             Mentora de mulheres, neuropsicopedagoga, terapeuta de TFT, escritora,
@@ -65,9 +65,9 @@ export default function Author() {
             <em className="text-[#CBBFAF]">HAS – Hoje, Amanhã e Sempre: O Despertar</em>.
           </p>
           <p className="mt-4 text-sm leading-relaxed text-[#CBBFAF] md:text-base">
-            Seu propósito é apoiar mulheres a despertarem para sua força interior,
-            desenvolverem maturidade emocional e criarem caminhos de vida mais
-            alinhados com quem realmente são.
+            Seu propósito é apoiar mulheres a saírem da paralisia emocional,
+            retomarem a própria direção e criarem caminhos de vida mais alinhados
+            com quem realmente são.
           </p>
 
           {/* credentials strip */}
