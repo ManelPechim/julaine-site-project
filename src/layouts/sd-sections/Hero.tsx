@@ -43,8 +43,8 @@ export default function Hero() {
           </p>
 
           {/* headline */}
-          <h1 className="sd-title-font mb-5 text-4xl leading-[1.15] text-[#4F6F63] md:text-5xl lg:text-[3.25rem]">
-            <span className="text-nowrap">O destrave para sua vida</span><br />
+          <h1 className="sd-title-font mb-5 text-3xl leading-[1.15] text-[#4F6F63] md:text-4xl lg:text-[3.25rem]">
+            <span className="text-wrap lg:text-nowrap">O destrave para sua vida</span><br />
             <em className="not-italic text-[#7A9B8E]">{" "}pessoal e profissional</em><br />
             começa aqui.
           </h1>
