@@ -35,7 +35,7 @@ export default function IdentifingProblem() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="reveal sd-delay-1">
           <SectionTitle
-            label="Identificação com o problema"
+            // label="Identificação com o problema"
             title="Talvez o problema não seja falta de capacidade"
             description="Muitas mulheres inteligentes e capazes vivem esse momento: têm potencial, mas estão cansadas de decidir no escuro, carregar tudo sozinhas e repetir padrões que drenam energia."
           />

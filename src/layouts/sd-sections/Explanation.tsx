@@ -26,7 +26,7 @@ export default function Explanation() {
           {/* Left column */}
           <div className="reveal sd-delay-1">
             <SectionTitle
-              label="Explicação breve da sessão"
+              // label="Explicação breve da sessão"
               title="O que é o Diagnóstico de Direção de Vida"
               description="É uma conversa estratégica para você enxergar sua realidade com mais clareza, nomear o que está te travando e sair com direção prática para os próximos passos."
             />

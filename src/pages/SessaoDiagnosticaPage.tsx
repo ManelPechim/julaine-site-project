@@ -4,7 +4,7 @@ import Hero from "../layouts/sd-sections/Hero";
 import IdentifingProblem from "../layouts/sd-sections/IdentifingProblem";
 import Explanation from "../layouts/sd-sections/Explanation";
 import Author from "../layouts/sd-sections/Author";
-import HowItWorks from "../layouts/sd-sections/HowItWorks";
+// import HowItWorks from "../layouts/sd-sections/HowItWorks";
 import ImportantFinalInvite from "../layouts/sd-sections/ImportantFinalInvite";
 import Seo from "../components/Seo";
 import Testimonials from "../layouts/sd-sections/Testimonials";
@@ -24,7 +24,7 @@ export default function SessaoDiagnosticaPage() {
       <Explanation />{/* 3. Explicação — o que é + checklist */}
       <Testimonials />
       <Author /> {/* 4. Autoridade — bio da Julaine */}
-      <HowItWorks /> {/* 5. Como funciona — 4 passos */}
+      {/* <HowItWorks /> /* 5. Como funciona — 4 passos */}
       {/* <ForWho />{/* 6. Para quem é / não é } */}
       <ImportantFinalInvite /> {/* 7. Escassez + CTA final */}
 

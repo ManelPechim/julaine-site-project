@@ -18,7 +18,7 @@ export default function Author() {
         <div className="reveal sd-delay-1 relative mx-auto w-full max-w-[22rem]">
           <div className="overflow-hidden rounded-3xl border-2 border-[#CBBFAF]/50 shadow-[0_16px_48px_rgba(0,0,0,0.25)]">
             <img
-              src="/sd-author-img.JPG"
+              src="/img5.jpeg"
               alt="Julaine Guimarães, especialista em desenvolvimento humano integral"
               className="block h-100 w-full object-cover object-top md:h-115"
             />
@@ -31,7 +31,10 @@ export default function Author() {
             </div>
             <div>
               <p className="text-xs font-bold text-[#4F6F63]">3.000+ exemplares</p>
-              <p className="text-[10px] text-[#8A8077]">Inteligência Emocional na Prática</p>
+              <p className="text-[10px] text-[#8A8077]">
+                Mentora de mulheres!
+                <br />
+                Mente, emoção e prosperidade feminina.</p>
             </div>
           </div>
         </div>

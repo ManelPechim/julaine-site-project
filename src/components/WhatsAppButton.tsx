@@ -26,7 +26,7 @@ export default function WhatsAppButton({
       rel="noopener noreferrer"
       className={`
         inline-flex items-center justify-center px-7 py-3.5 gap-2 
-        rounded-full text-sm text-white font-bold tracking-wide transition-all 
+        rounded-full text-xs md:text-sm text-white font-bold tracking-wide transition-all 
         duration-300 hover:-translate-y-0.5 hover:shadow-lg 
         ${isLight
           ? "bg-[#7A9B8E] hover:bg-[#4F6F63]"

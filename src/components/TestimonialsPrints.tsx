@@ -5,36 +5,44 @@ interface TestimonialsProps {
   quote?: string,
 };
 
+const imageNameBase: string = "/testimonial"
+
 const testimonials = [
   {
-    image: "/testimonial-1.jpg"
+    image: `${imageNameBase}-1.jpg`
   },
   {
-    image: "/testimonial-2.jpg"
+    image: `${imageNameBase}-2.jpg`
   },
   {
-    image: "/testimonial-3.PNG"
+    image: `${imageNameBase}-3.PNG`
+  },
+  {
+    image: `${imageNameBase}-4.PNG`
+  },
+  {
+    image: `${imageNameBase}-5.PNG`
   }
 ];
 
 const TestimonialsPrints = ({ bgClass, quote }: TestimonialsProps) => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-6" > {/* Testimonials Grid */}
-      {
-        testimonials.map((testimonial, index) => (
+    <>
+      {/* Quote Icon */}
+      <div className='flex justify-between'>
+        <Quote className={`w-8 h-8 lg:w-10 lg:h-10 transition-colors rotate-180 ${quote}`} />
+        <Quote className={`w-8 h-8 lg:w-10 lg:h-10 transition-colors ${quote}`} />
+      </div>
+      <section className="grid lg:grid-cols-5 justify-center items-center gap-6" > {/* Testimonials Grid */}
+
+        {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className={`grid items-start mx-20 md:m-0 p-4 lg:p-8
-              rounded-2xl hover:scale-105 transition-all duration-300 group ${bgClass}`}
+            className={`${bgClass} flex justify-center items-center w-60 lg:w-full h-104 gap-6 mx-20 md:m-0 p-4
+              rounded-2xl transition-all duration-300 `}
           >
-            {/* Quote Icon */}
-            <div className='flex justify-between mb-6'>
-              <Quote className={`w-8 h-8 lg:w-10 lg:h-10 transition-colors ${quote}`} />
-              <Quote className={`w-8 h-8 lg:w-10 lg:h-10 transition-colors rotate-180 ${quote}`} />
-            </div>
-
             {/* Testimonial IMG & Author  */}
-            <div className="">
+            <div className="w-full rounded-xl">
               {testimonial.image && (
                 <img
                   src={testimonial.image}
@@ -44,9 +52,9 @@ const TestimonialsPrints = ({ bgClass, quote }: TestimonialsProps) => {
               )}
             </div>
           </div>
-        ))
-      }
-    </section >
+        ))}
+      </section >
+    </>
   );
 }
 

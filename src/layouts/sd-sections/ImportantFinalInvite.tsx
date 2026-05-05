@@ -67,7 +67,7 @@ export default function ImportantFinalInvite() {
           />
 
           <p className="mt-6 text-xs text-[#E8DED4]">
-            Atendimento online · 100% ao vivo <span className="text-[#E8DED4] uppercase">· poucas vagas por semana</span>
+            Atendimento online · 100% ao vivo <span className="text-[#E8DED4] uppercase">· vagas limitadas</span>
           </p>
         </div>
       </section>
