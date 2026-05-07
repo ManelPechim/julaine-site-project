@@ -1,32 +1,32 @@
-import { Shuffle, Map, Compass, HeartHandshake, CircleOff, RefreshCcw } from "lucide-react";
+import { Shuffle, Map, Compass, CircleOff, RefreshCcw } from "lucide-react";
 import { SectionTitle } from "../../components/SectionTitle";
 
 const iconClass: string = "mt-1 h-4 w-4 shrink-0 text-[#7A9B8E]";
 const painPoints = [
   {
     icon: <CircleOff className={`${iconClass}`} />,
-    item: "Sente que poderia avançar muito mais, mas algo sempre freia suas decisões.",
+    item: "Deseja desenvolver inteligência emocional.",
   },
   {
     icon: <Shuffle className={`${iconClass}`} />,
-    item: "Tem pensamentos e emoções misturados e não sabe por onde começar.",
+    item: "Sente que precisa reorganizar e reprogramar  pensamentos e sentimentos.",
   },
   {
     icon: <RefreshCcw className={`${iconClass}`} />,
-    item: "Vive ocupada, resolve tudo para todos, mas sente pouco progresso na própria vida.",
+    item: "Busca mais clareza sobre seus sonhos e metas.",
   },
   {
     icon: <Map className={`${iconClass}`} />,
-    item: "Tem sonhos importantes, mas trava na hora de transformar vontade em plano de ação.",
+    item: "Querer desenvolver hábitos mais alinhados com seus objetivos.",
   },
   {
     icon: <Compass className={`${iconClass}`} />,
-    item: "Sente que precisa reorganizar sua vida, hábitos e direção.",
+    item: "Deseja crescer com mais consciência e direção na vida pessoal e profissional.",
   },
-  {
-    icon: <HeartHandshake className={`${iconClass}`} />,
-    item: "Coloca as necessidades de todos à frente das suas e termina o dia com a sensação de que não cuidou de si.",
-  },
+  // {
+  //   icon: <HeartHandshake className={`${iconClass}`} />,
+  //   item: "Coloca as necessidades de todos à frente das suas e termina o dia com a sensação de que não cuidou de si.",
+  // },
 ];
 
 export default function IdentifingProblem() {
@@ -44,7 +44,7 @@ export default function IdentifingProblem() {
         {/* Divider line */}
         <div className="mt-4 h-0.5 w-full bg-linear-to-r from-[#C8A96A] to-transparent" />
 
-        <ul className="mt-10 grid gap-4 md:grid-cols-2 justify">
+        <ul className="mt-10 grid gap-4 md:grid-cols-2 grid-rows-2">
           {painPoints.map(({ icon, item }) => (
             <li
               key={item}

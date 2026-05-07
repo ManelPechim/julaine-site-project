@@ -30,8 +30,8 @@ export default function Author() {
               <BookOpen className="h-5 w-5 text-[#4F6F63]" />
             </div>
             <div>
-              <p className="text-xs font-bold text-[#4F6F63]">3.000+ exemplares</p>
-              <p className="text-[10px] text-[#8A8077]">
+              {/* <p className="text-xs font-bold text-[#4F6F63]">3.000+ exemplares</p> */}
+              <p className="text-[11px] text-[#4F6F63]">
                 Mentora de mulheres!
                 <br />
                 Mente, emoção e prosperidade feminina.</p>

@@ -13,7 +13,7 @@ const ScrollIndicator = ({ scrollTo, className, arrowClassName }: { scrollTo: st
         animate-bounce ease-in-out transition-all border-2 cursor-pointer ${className}`}
       onClick={() => scrollToPainPoints(scrollTo)}
     >
-      <ArrowDown className={`w-5 h-5 lg:w-6 lg:h-6 ${arrowClassName}`} />
+      <ArrowDown className={`size-5 lg:size-6 ${arrowClassName}`} />
     </div >
   );
 }

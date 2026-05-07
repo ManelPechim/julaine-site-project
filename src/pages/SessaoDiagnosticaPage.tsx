@@ -8,6 +8,7 @@ import Author from "../layouts/sd-sections/Author";
 import ImportantFinalInvite from "../layouts/sd-sections/ImportantFinalInvite";
 import Seo from "../components/Seo";
 import Testimonials from "../layouts/sd-sections/Testimonials";
+import Book from "../layouts/sd-sections/Book";
 
 export default function SessaoDiagnosticaPage() {
   
@@ -22,6 +23,7 @@ export default function SessaoDiagnosticaPage() {
       <Hero /> {/* 1. Hero — headline forte + foto + features */}
       <IdentifingProblem /> {/* 2. Identificação — dores + reflexão */}
       <Explanation />{/* 3. Explicação — o que é + checklist */}
+      <Book />
       <Testimonials />
       <Author /> {/* 4. Autoridade — bio da Julaine */}
       {/* <HowItWorks /> /* 5. Como funciona — 4 passos */}

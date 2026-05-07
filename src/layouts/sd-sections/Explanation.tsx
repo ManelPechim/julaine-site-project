@@ -9,7 +9,7 @@ const sessionFocus = [
   "Sair com uma visão inicial clara do próximo passo.",
 ];
 
-const size: string = "h-4.5 w-4.5"
+const size: string = "size-4.5"
 
 const discoveries = [
   { icon: <Search className={size} />, label: "O que realmente está se repetindo" },
@@ -28,7 +28,10 @@ export default function Explanation() {
             <SectionTitle
               // label="Explicação breve da sessão"
               title="O que é o Diagnóstico de Direção de Vida"
-              description="É uma conversa estratégica para você enxergar sua realidade com mais clareza, nomear o que está te travando e sair com direção prática para os próximos passos."
+              description="Durante a sessão, se eu perceber que a minha mentoria 
+              pode realmente te ajudar no seu momento de vida, vou apresentar a possibilidade 
+              de continuar esse processo comigo. Mas essa decisão será sempre feita com clareza,
+              respeito e alinhamento com seu momento, pois nem todas estão preparadas."
             />
 
             {/* Divider line */}
@@ -42,14 +45,14 @@ export default function Explanation() {
             </div>
 
             {/* Discovery mini grid */}
-            <div className="mt-8 grid grid-cols-2 gap-3">
+            <div className="mt-8 grid grid-cols-2 grid-rows-1 gap-3 items-center">
               {discoveries.map(({ icon, label }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-2 rounded-xl border border-[#CBBFAF] bg-[#FDFCFB]/70 px-3 py-2.5"
+                  className="flex items-start px-3 py-2.5 gap-2 h-full rounded-xl border border-[#CBBFAF] bg-[#FDFCFB]/70 "
                 >
                   <span className="text-[#C8A96A]">{icon}</span>
-                  <p className="text-xs font-medium leading-tight text-[#5B4A3E]">{label}</p>
+                  <p className="text-xs md:text-[13px] font-medium leading-tight text-[#5B4A3E]">{label}</p>
                 </div>
               ))}
             </div>
@@ -57,8 +60,8 @@ export default function Explanation() {
 
           {/* Right column */}
           <div className="reveal sd-delay-2 rounded-3xl border border-[#CBBFAF] bg-[#F6F2EB]/50 p-6 md:p-8">
-            <p className="mb-5 text-xs font-bold uppercase tracking-[0.14em] text-[#4F6F63]">
-              Durante a sessão, vamos olhar para
+            <p className="mb-5 text-[17px] font-extrabold uppercase tracking-[0.14em] sd-text-gradient">
+              Se existir um próximo passo para você
             </p>
             <ul className="space-y-4">
               {sessionFocus.map((focus, i) => (
