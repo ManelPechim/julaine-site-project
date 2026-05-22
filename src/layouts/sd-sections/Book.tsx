@@ -1,18 +1,20 @@
-import { UserRoundPen, BookOpen, Rose } from "lucide-react";
+import { UserRoundPen, Rose } from "lucide-react";
 
 export default function Book() {
   const bookInfoItems = [
     {
       icon: UserRoundPen,
-      text: "Autora do livro Inteligência Emocional na Prática",
+      text: <p>Autora do livro <i>Inteligência Emocional na Prática</i>, 
+      uma obra que já impactou milhares de mulheres em seus processos de autoconhecimento,
+      clareza emocional e transformação pessoal</p>,
     },
-    {
-      icon: BookOpen,
-      text: "+3.000 de exemplares vendidos",
-    },
+    // {
+    //   icon: BookOpen,
+    //   text: "+3.000 de exemplares vendidos",
+    // },
     {
       icon: Rose,
-      text: "Mais de 3.000 exemplares do livro Inteligência Emocional na Prática já impactaram mulheres em seus processos de autoconhecimento e transformação.",
+      text: <p>Mais de 3.000 exemplares do livro <i>Inteligência Emocional na Prática</i> já impactaram mulheres em seus processos de autoconhecimento e transformação.</p>,
     },
   ];
 
@@ -31,23 +33,23 @@ export default function Book() {
           {/* Info card */}
           <section className="p-2 md:p-4">
             <h1 className="text-[13px] tracking-[0.2em] uppercase text-[#C8A96A] font-bold">
-              E-book
+              Livro Físico
             </h1>
             <h2 className="sd-title-font text-base md:text-2xl text-white">
               Inteligência Emocional na Prática
             </h2>
             {/* Divider line */}<div className="mt-1 mb-4 h-0.5 w-full bg-linear-to-r from-[#C8A96A] to-transparent" />
             <li className="flex flex-col mt-2 gap-3 max-w-md">
-              {bookInfoItems.map(({ icon, text }) => {
-                const Icon = icon;
+              {bookInfoItems.map((item, index) => {
+                const Icon = item.icon;
                 return (
-                  <div className="flex items-start gap-2 text-xs p-2 rounded-lg bg-white font-medium">
-                    <p className="bg-[#F6F2EB] border border-[#C8A96A]/30 p-1 rounded-md">
+                  <div key={index} className="flex items-start gap-2 text-xs p-2 rounded-lg bg-white font-medium">
+                    <span className="bg-[#F6F2EB] border border-[#C8A96A]/30 p-1 rounded-md">
                       <Icon className="size-4 md:size-6" />
-                    </p>
-                    <p className="text-[10px] md:text-sm leading-relaxed">
-                      {text}
-                    </p>
+                    </span>
+                    <span className="text-[10px] md:text-sm leading-relaxed">
+                      {item.text}
+                    </span>
                   </div>
                 );
               })}

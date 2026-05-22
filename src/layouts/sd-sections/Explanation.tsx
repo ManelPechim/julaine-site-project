@@ -1,16 +1,7 @@
-import { Check, Compass, Lightbulb, Search, Sprout } from "lucide-react";
+import { Compass, Lightbulb, Search, Sprout } from "lucide-react";
 import { SectionTitle } from "../../components/SectionTitle";
 
-const sessionFocus = [
-  "Entender com precisão o momento de vida que você está vivendo.",
-  "Identificar os padrões emocionais que mais influenciam suas decisões.",
-  "Olhar para seus sonhos e objetivos sem autoengano e sem culpa.",
-  "Perceber hábitos e pensamentos que estão bloqueando seus avanços.",
-  "Sair com uma visão inicial clara do próximo passo.",
-];
-
 const size: string = "size-4.5"
-
 const discoveries = [
   { icon: <Search className={size} />, label: "O que realmente está se repetindo" },
   { icon: <Lightbulb className={size} />, label: "Crenças que ainda direcionam suas escolhas e que a limitam" },
@@ -18,13 +9,34 @@ const discoveries = [
   { icon: <Compass className={size} />, label: "Opções reais de direção para o próximo ciclo" },
 ];
 
+// const sessionFocus = [
+//   "Entender com precisão o momento de vida que você está vivendo.",
+//   "Identificar os padrões emocionais que mais influenciam suas decisões.",
+//   "Olhar para seus sonhos e objetivos sem autoengano e sem culpa.",
+//   "Perceber hábitos e pensamentos que estão bloqueando seus avanços.",
+//   "Sair com uma visão inicial clara do próximo passo.",
+// ];
+{/* <ul className="space-y-4">
+  {sessionFocus.map((focus, i) => (
+    <li
+      key={focus}
+      className={`reveal flex items-start gap-3 text-sm leading-relaxed md:text-base sd-delay-${i + 1}`}
+    >
+      <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#7A9B8E]/20">
+        <Check className="h-3 w-3 text-[#4F6F63]" />
+      </div>
+      {focus}
+    </li>
+  ))}
+</ul> */}
+
 export default function Explanation() {
   return (
     <main className="relative overflow-hidden bg-[#E8DED4] py-16 md:py-20 reveal">
       <div className="relative z-10 mx-auto max-w-6xl px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left column */}
-          <div className="reveal sd-delay-1">
+          <section className="reveal sd-delay-1">
             <SectionTitle
               // label="Explicação breve da sessão"
               title="O que é o Diagnóstico de Direção de Vida"
@@ -56,34 +68,25 @@ export default function Explanation() {
                 </div>
               ))}
             </div>
-          </div>
+          </section>
 
           {/* Right column */}
-          <div className="reveal sd-delay-2 rounded-3xl border border-[#CBBFAF] bg-[#F6F2EB]/50 p-6 md:p-8">
-            <p className="mb-5 text-[17px] font-extrabold uppercase tracking-[0.14em] sd-text-gradient">
+          <aside className="relative overflow-hidden flex justify-self-center md:w-130 lg:w-130 rounded-tl-3xl rounded-br-3xl rounded-lg border-6 border-[#C8A96A]/30 shadow-[0_1px_48px_rgba(0,0,0,0.25)]">
+            {/* <p className="mb-5 text-[17px] font-extrabold uppercase tracking-[0.14em] sd-text-gradient">
               Se existir um próximo passo para você
-            </p>
-            <ul className="space-y-4">
-              {sessionFocus.map((focus, i) => (
-                <li
-                  key={focus}
-                  className={`reveal flex items-start gap-3 text-sm leading-relaxed md:text-base sd-delay-${i + 1}`}
-                >
-                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#7A9B8E]/20">
-                    <Check className="h-3 w-3 text-[#4F6F63]" />
-                  </div>
-                  {focus}
-                </li>
-              ))}
-            </ul>
-
-            {/* Bottom note */}
-            <div className="mt-8 rounded-xl bg-[#4F6F63]/8 border border-[#4F6F63]/20 p-4 text-center">
-              <p className="text-xs leading-relaxed text-[#4F6F63] md:text-sm">
+            </p> */}
+            <img
+              src="/sd-explanation-julaine.JPG"
+              alt="Julaine Guimarães, especialista em desenvolvimento humano integral"
+              className="block h-100 w-full object-cover md:h-115"
+            />
+            {/* Bottom note
+            <div className="absolute top-4/5 left-2 right-2 rounded-xl bg-[#4F6F63]/10 backdrop-blur-sm border border-[#4F6F63]/20 p-4 text-center">
+              <p className="text-xs leading-relaxed text-[#F6F2EB] md:text-sm">
                 Uma boa conversa pode interromper meses de confusão e acelerar uma decisão que você já precisava tomar.
               </p>
-            </div>
-          </div>
+            </div> */}
+          </aside>
         </div>
       </div>
     </main>
