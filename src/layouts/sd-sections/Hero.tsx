@@ -174,7 +174,7 @@ export default function Hero() {
             </button> */}
             <button
               onClick={() => document.getElementById('more')?.scrollIntoView({ behavior: "smooth" })}
-              className="inline-flex items-center justify-center w-full gap-2 rounded-full px-6 py-3 ring-1 ring-[#C8A96A]/40 bg-[#5B4A3E] text-white font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center w-full gap-2 rounded-full px-6 py-3  bg-[#5B4A3E] animate-glow-brown text-white font-bold tracking-wide transition-all duration-300 hover:-translate-y-0.5"
             >
               <BookCopy className="h-4 w-4" />
               Quero entender PORQUÊ é para mim

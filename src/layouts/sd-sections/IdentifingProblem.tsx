@@ -5,23 +5,23 @@ const iconClass: string = "mt-1 h-4 w-4 shrink-0 text-[#7A9B8E]";
 const painPoints = [
   {
     icon: <CircleOff className={`${iconClass}`} />,
-    item: "Deseja desenvolver inteligência emocional.",
+    item: "Desejam desenvolver inteligência emocional.",
   },
   {
     icon: <Shuffle className={`${iconClass}`} />,
-    item: "Sente que precisa reorganizar e reprogramar  pensamentos e sentimentos.",
+    item: "Sentem que precisam reorganizar e reprogramar pensamentos e sentimentos.",
   },
   {
     icon: <RefreshCcw className={`${iconClass}`} />,
-    item: "Busca mais clareza sobre seus sonhos e metas.",
+    item: "Buscam mais clareza sobre seus sonhos e metas.",
   },
   {
     icon: <Map className={`${iconClass}`} />,
-    item: "Querer desenvolver hábitos mais alinhados com seus objetivos.",
+    item: "Querem desenvolver hábitos mais alinhados com seus objetivos.",
   },
   {
     icon: <Compass className={`${iconClass}`} />,
-    item: "Deseja crescer com mais consciência e direção na vida pessoal e profissional.",
+    item: "Desejam crescer com mais consciência e direção na vida pessoal e profissional.",
   },
   // {
   //   icon: <HeartHandshake className={`${iconClass}`} />,
@@ -36,8 +36,8 @@ export default function IdentifingProblem() {
         <div className="reveal sd-delay-1">
           <SectionTitle
             // label="Identificação com o problema"
-            title="Talvez o problema não seja falta de capacidade"
-            description="Muitas mulheres inteligentes e capazes vivem esse momento: têm potencial, mas estão cansadas de decidir no escuro, carregar tudo sozinhas e repetir padrões que drenam energia."
+            title="Para quem essa sessão é indicada"
+            description="Muitas mulheres inteligentes e capazes vivem esse momento: têm potencial, mas estão cansadas de decidir no escuro, carregar tudo sozinhas e repetir padrões que drenam energia. Essa sessão é ideal para mulheres que:"
           />
         </div>
 

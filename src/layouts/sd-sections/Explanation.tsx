@@ -1,12 +1,24 @@
 import { Compass, Lightbulb, Search, Sprout } from "lucide-react";
 import { SectionTitle } from "../../components/SectionTitle";
 
-const size: string = "size-4.5"
+const size: string = "size-4.5";
 const discoveries = [
-  { icon: <Search className={size} />, label: "O que realmente está se repetindo" },
-  { icon: <Lightbulb className={size} />, label: "Crenças que ainda direcionam suas escolhas e que a limitam" },
-  { icon: <Sprout className={size} />, label: "Hábitos que travam seu crescimento" },
-  { icon: <Compass className={size} />, label: "Opções reais de direção para o próximo ciclo" },
+  {
+    icon: <Search className={size} />,
+    label: "O que realmente está se repetindo",
+  },
+  {
+    icon: <Lightbulb className={size} />,
+    label: "Crenças que ainda direcionam suas escolhas e que a limitam",
+  },
+  {
+    icon: <Sprout className={size} />,
+    label: "Hábitos que travam seu crescimento",
+  },
+  {
+    icon: <Compass className={size} />,
+    label: "Opções reais de direção para o próximo ciclo",
+  },
 ];
 
 // const sessionFocus = [
@@ -16,7 +28,8 @@ const discoveries = [
 //   "Perceber hábitos e pensamentos que estão bloqueando seus avanços.",
 //   "Sair com uma visão inicial clara do próximo passo.",
 // ];
-{/* <ul className="space-y-4">
+{
+  /* <ul className="space-y-4">
   {sessionFocus.map((focus, i) => (
     <li
       key={focus}
@@ -28,7 +41,23 @@ const discoveries = [
       {focus}
     </li>
   ))}
-</ul> */}
+</ul> */
+}
+const description = {
+  text:
+    <>
+      <p>
+        Durante a sessão, se eu perceber que a minha mentoria
+        pode realmente te ajudar no seu momento de vida, vou apresentar a possibilidade
+        de continuar esse processo comigo.
+      </p>
+      <br />
+      <p>
+        Mas essa decisão será sempre feita com clareza,
+        respeito e alinhamento com seu momento, pois nem todas estão preparadas.
+      </p>
+    </>
+};
 
 export default function Explanation() {
   return (
@@ -40,19 +69,13 @@ export default function Explanation() {
             <SectionTitle
               // label="Explicação breve da sessão"
               title="O que é o Diagnóstico de Direção de Vida"
-              description="Durante a sessão, se eu perceber que a minha mentoria 
-              pode realmente te ajudar no seu momento de vida, vou apresentar a possibilidade 
-              de continuar esse processo comigo. Mas essa decisão será sempre feita com clareza,
-              respeito e alinhamento com seu momento, pois nem todas estão preparadas."
             />
-
-            {/* Divider line */}
-            <div className="mt-4 h-0.5 w-full bg-gradient-to-r from-[#C8A96A] to-transparent" />
 
             {/* Quote block */}
             <div className="mt-6 rounded-2xl border-l-4 border-[#C8A96A] bg-[#F6F2EB]/60 p-5">
               <p className="text-sm italic leading-relaxed text-[#5B4A3E] md:text-base">
-                "Não é só desabafar: é sair da conversa com leitura, clareza e uma direção para mudar a sua vida."
+                "Não é só desabafar: é sair da conversa com leitura, clareza e
+                uma direção para mudar a sua vida."
               </p>
             </div>
 
@@ -64,10 +87,20 @@ export default function Explanation() {
                   className="flex items-start px-3 py-2.5 gap-2 h-full rounded-xl border border-[#CBBFAF] bg-[#FDFCFB]/70 "
                 >
                   <span className="text-[#C8A96A]">{icon}</span>
-                  <p className="text-xs md:text-[13px] font-medium leading-tight text-[#5B4A3E]">{label}</p>
+                  <p className="text-xs md:text-[13px] font-medium leading-tight text-[#5B4A3E]">
+                    {label}
+                  </p>
                 </div>
               ))}
             </div>
+
+            {/* Divider line */}<div className="mt-4 mb-2 h-0.5 w-full bg-gradient-to-r from-[#C8A96A] to-transparent" />
+
+            <SectionTitle
+              title="Se existir um próximo passo para você..."
+              description={description.text}
+            />
+
           </section>
 
           {/* Right column */}

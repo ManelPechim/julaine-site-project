@@ -3,7 +3,7 @@ import { Leaf } from "lucide-react";
 type SectionTitleProps = {
   label?: string;
   title?: string;
-  description?: string;
+  description?: string | JSX.Element;
   center?: boolean;
 };
 
@@ -25,9 +25,9 @@ export const SectionTitle = ({
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-base leading-relaxed text-[#8A8077] md:text-lg">
+        <div className="mt-4 text-base leading-relaxed text-[#8A8077] md:text-lg">
           {description}
-        </p>
+        </div>
       ) : null}
     </div>
   );
