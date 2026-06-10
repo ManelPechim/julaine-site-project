@@ -36,7 +36,7 @@ export default function IdentifingProblem() {
         <div className="reveal sd-delay-1">
           <SectionTitle
             // label="Identificação com o problema"
-            title="Para quem essa sessão é indicada"
+            title="Para quem essa sessão é indicada?"
             description="Muitas mulheres inteligentes e capazes vivem esse momento: têm potencial, mas estão cansadas de decidir no escuro, carregar tudo sozinhas e repetir padrões que drenam energia. Essa sessão é ideal para mulheres que:"
           />
         </div>

@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logo from "./ui/Logo";
-import { useIsMobile } from "./ui/use-mobile";
+import { useWindowWidth } from "./ui/use-mobile";
 
 
 const navItems = [
@@ -20,7 +20,7 @@ const headerItems = [
 ];
 
 export default function NavHeader() {
-  const isMobile = useIsMobile();
+  const isMobile = useWindowWidth();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
