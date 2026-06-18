@@ -30,7 +30,7 @@ export default function Book() {
   ];
 
   return (
-    <main className="flex flex-col gap-20 items-center py-8 px-6 min-h-[75vh] md:min-h-[75vh] lg:min-h-[70vh] reveal sd-gradient shadow-xl overflow-">
+    <main className="flex flex-col gap-20 items-center py-8 px-6 min-h-[75vh] md:min-h-[75vh] lg:min-h-[86vh] reveal sd-gradient shadow-xl overflow-">
       {/* Decorative circles (subtle, behind content) */}
       <span className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10 z-10" />
       <span className="pointer-events-none absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10 z-10" />
@@ -63,10 +63,10 @@ export default function Book() {
       <main className="flex py-12">
         {books.map(({ img, name }, index) => (
           <section key={index}
-            className="flex justify-center items-center w-full p-1 lg:p-2 h-23 md:h-40 lg:h-50 rounded-2xl"
+            className="flex justify-center items-center w-full p-1 lg:p-2 h-23 md:h-40 lg:h-80 rounded-2xl"
           >
             <aside className="flex flex-col min-h-full lg:gap-5 p-5 md:p-5 relative z-20 max-w-[1120px] border-2 border-[#C8A96A] bg-white/2 text-[#2b3b33] rounded-2xl shadow-2xl backdrop-blur-xs">
-              <div className="flex flex-col items-center justify-center gap-2 w-[16vh] h-[22vh] md:w-full md:h-full lg:w-[52vh]">
+              <div className="flex flex-col items-center justify-center gap-2 w-[16vh] h-[22vh] md:w-full md:h-full lg:h-[50vh] lg:w-[52vh]">
                 <h2 className="flex gap-22 sd-title-font text-xs md:text-2xl text-white">
                   {name}
                 </h2>

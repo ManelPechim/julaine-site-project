@@ -49,11 +49,8 @@ export default function HeroMedium() {
             <div className="flex gap-2 sd-title-font w-70">
               <AlertCircle className="mt-0.5 size-6 text-[#4F6F63]" />
               <h2 className="flex text-[13.75px] w-full">
-                <p>
-                  <span className="sd-text-gradient font-extrabold underline uppercase">
-                    Essa sessão não fica disponível o tempo todo
-                  </span>, pois envolve acompanhamento individual e um direcionamento profundo.
-                  É gratuita, 100% individual e com direcionamento profundo.
+                <p className="sd-text-gradient font-extrabold underline underline-offset-4 uppercase">
+                  É gratuita, <span className="font-sans font-bold">100%</span> individual e com direcionamento profundo.
                 </p>
               </h2>
             </div>

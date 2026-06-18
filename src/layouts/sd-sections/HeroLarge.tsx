@@ -51,15 +51,10 @@ export default function HeroLarge() {
           <div className="flex flex-wrap items-center gap-1 mt-0">
             <h1 className="flex items-center gap-2 sd-title-font w-full">
               <AlertCircle className="mt-0.5 size-6 text-[#4F6F63]" />
-              <p className="sd-text-gradient font-extrabold underline uppercase whitespace-nowrap text-xl">
-                Essa sessão não fica disponível o tempo todo,
+              <p className="sd-text-gradient font-extrabold underline underline-offset-4 uppercase whitespace-nowrap text-xl">
+                É gratuita, <span className="font-sans font-bold">100%</span> individual e com direcionamento profundo.
               </p>
             </h1>
-            <p className="-mt-2 text-lg">
-              pois envolve acompanhamento individual e um direcionamento profundo.
-              <br />
-              É gratuita, 100% individual e com direcionamento profundo.
-            </p>
           </div>
           {/* stats strip */}
           <div className="mt-0 my-6 pt-4 flex w-full justify-between gap-4 border-t border-[#CBBFAF]/50">

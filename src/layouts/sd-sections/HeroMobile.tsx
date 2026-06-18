@@ -45,14 +45,8 @@ export default function HeroMobile() {
           </div>
 
           <div className="flex mt-5 flex-wrap justify-center text-center w-[350px] text-[13px] sd-title-font">
-            <p className="sd-text-gradient font-extrabold underline uppercase">
-              Essa sessão não fica disponível o tempo todo
-            </p>
-            <p>
-              pois envolve acompanhamento individual e um direcionamento profundo.
-            </p>
-            <p>
-              É gratuita, 100% individual e com direcionamento profundo.
+            <p className="sd-text-gradient font-extrabold underline underline-offset-4 uppercase">
+              É gratuita, <span className="font-serif">100%</span> individual e com direcionamento profundo.
             </p>
           </div>
         </div>
