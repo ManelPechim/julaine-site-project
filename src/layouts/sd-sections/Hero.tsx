@@ -26,10 +26,12 @@ export default function Hero() {
       {isMobile ? <HeroMobile /> : isMedium ? <HeroMedium /> : <HeroLarge />}
 
       {/* Scroll Indicator */}
-      <ScrollIndicator
-        scrollTo="more"
-        className="col-span-2 mb-5 md:-mt-6 lg:mt-3"
-      />
+      <div className="w-full flex justify-center">
+        <ScrollIndicator
+          scrollTo="more"
+          className="mb-5 md:-mt-6 lg:mt-3"
+        />
+      </div>
     </header >
   );
 }

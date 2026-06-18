@@ -53,6 +53,7 @@ export default function HeroMedium() {
                   <span className="sd-text-gradient font-extrabold underline uppercase">
                     Essa sessão não fica disponível o tempo todo
                   </span>, pois envolve acompanhamento individual e um direcionamento profundo.
+                  É gratuita, 100% individual e com direcionamento profundo.
                 </p>
               </h2>
             </div>
@@ -80,7 +81,7 @@ export default function HeroMedium() {
           </button>
         </div>
       </div>
-      
+
       {/* ── RIGHT: photo + feature card ── */}
       <div className="relative flex justify-start self-start">
         {/* main photo */}

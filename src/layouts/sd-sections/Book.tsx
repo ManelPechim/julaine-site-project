@@ -59,15 +59,15 @@ export default function Book() {
         </section>
       </div>
 
-      {/* E-book float section */}
+      {/* Books cards float section */}
       <main className="flex py-12">
         {books.map(({ img, name }, index) => (
           <section key={index}
             className="flex justify-center items-center w-full p-1 lg:p-2 h-23 md:h-40 lg:h-50 rounded-2xl"
           >
             <aside className="flex flex-col min-h-full lg:gap-5 p-5 md:p-5 relative z-20 max-w-[1120px] border-2 border-[#C8A96A] bg-white/2 text-[#2b3b33] rounded-2xl shadow-2xl backdrop-blur-xs">
-              <div className="flex flex-col items-center justify-center gap-2 w-[18vh] md:w-full lg:w-[52vh]">
-                <h2 className="flex gap-22 sd-title-font text-base md:text-2xl text-white">
+              <div className="flex flex-col items-center justify-center gap-2 w-[16vh] h-[22vh] md:w-full md:h-full lg:w-[52vh]">
+                <h2 className="flex gap-22 sd-title-font text-xs md:text-2xl text-white">
                   {name}
                 </h2>
                 {/* Divider line */}<div className="mt-1 mb-2 h-0.5 w-full bg-linear-to-r from-[#C8A96A] to-transparent" />

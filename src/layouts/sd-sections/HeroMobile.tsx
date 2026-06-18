@@ -51,6 +51,9 @@ export default function HeroMobile() {
             <p>
               pois envolve acompanhamento individual e um direcionamento profundo.
             </p>
+            <p>
+              É gratuita, 100% individual e com direcionamento profundo.
+            </p>
           </div>
         </div>
         {/* ── RIGHT: photo + feature card ── */}
