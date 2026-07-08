@@ -8,10 +8,10 @@ import { useWindowWidth } from "./ui/use-mobile";
 
 const navItems = [
   { label: "Início", to: "/" },
-  { label: "Blog", to: "/blog" },
-  { label: "Sobre", to: "/sobre" },
+  // { label: "Blog", to: "/blog" }, // Páginas desativadas enquanto não estiverem sendo feitas
+  // { label: "Sobre", to: "/sobre" },
   { label: "E-book", to: "/ebook" },
-  { label: "Contato", to: "/contato" },
+  // { label: "Contato", to: "/contato" },
 ];
 
 const headerItems = [

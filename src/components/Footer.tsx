@@ -4,8 +4,8 @@ import InstagramLink from './ui/InstagramLink';
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-[#E7C19A] py-16">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="bg-black border-t border-[#E7C19A] pt-16">
+      <div className="max-w-7xl mx-auto px-6 pb-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo Brand */}
           <div>
@@ -80,6 +80,17 @@ export default function Footer() {
             </p>
           </div>
         </div>
+      </div>
+      <div className='flex flex-col justify-center items-center text-white'>
+        <p>&lt; Desenvolvido por <a href='https://github.com/ManelPechim' className='italic text-purple-500 hover:text-white transition-all hover:scale-105'>ManelPechim</a> /&gt;</p>
+        <p className='flex justify-center items-center gap-1'>
+          <a href='https://github.com/ManelPechim'>
+            <img src='/github-white-icon.webp' className='size-6 hover:scale-105 transition-all'></img>
+          </a>
+          <a href='https://wa.me/5544984538946?text=Olá! Vim de um dos seus produtos, gostaria de saber seus serviços.' target='_blank' rel='nooper noreferrer'>
+            <img src='/whatsapp-logo.webp' className='size-7 hover:scale-105 transition-all'></img>
+          </a>
+        </p>
       </div>
     </footer>
   );
