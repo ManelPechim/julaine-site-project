@@ -39,7 +39,7 @@ const pains = [
   }
 ];
 
-export function PainPoints() {
+export default function PainPoints() {
   return (
     <section id='pain-points' className="shadow-[0px_-20px_50px_#0A0A0A] py-20 md:py-32 bg-[#0A0A0A] relative">
       {/* Subtle gradient overlay */}

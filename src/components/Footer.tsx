@@ -1,16 +1,16 @@
 import { Instagram, Mail, Phone } from 'lucide-react';
-import Logo from '../ui/Logo';
-import InstagramLink from '../ui/InstagramLink';
+import Logo from './ui/Logo';
+import InstagramLink from './ui/InstagramLink';
 
-export function Footer() {
+export default function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] border-t border-[#E7C19A]/10 py-16">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="bg-black border-t border-[#E7C19A] pt-16">
+      <div className="max-w-7xl mx-auto px-6 pb-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Logo Brand */}
           <div>
-            <div className="flex items-center justify-center lg:mb-10 w-50 h-24 lg:w-60 lg:h-14">
-              <Logo className='object-cover w-50 lg:w-60 h-24 lg:h-14' />
+            <div className="flex items-center justify-center lg:mb-10 w-48 h-24 lg:w-60 lg:h-14">
+              <Logo className='object-cover w-48 lg:w-60 h-24 lg:h-14' />
             </div>
             <p className="text-gray-400 leading-relaxed mb-4">
               Desenvolvimento Humano Integral — transformando vidas por meio da inteligência emocional e neurociência aplicada na vida prática.
@@ -32,13 +32,13 @@ export function Footer() {
                 href="https://wa.me/5543999637029"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-400 hover:text-[#E7C19A] transition-colors"
+                className="flex items-center gap-3 text-gray-400 hover:text-[#E7C19A]  transition-colors"
               >
                 <Phone className="w-5 h-5" />
                 <span>(43) 99963-7029</span>
               </a>
               <InstagramLink
-                className="flex items-center gap-3 text-gray-400 hover:text-[#E7C19A] transition-colors"
+                className="flex items-center gap-3 text-gray-400 hover:text-[#E7C19A]  transition-colors"
               >
                 <Instagram className="w-5 h-5" />
                 <span>@julainegui</span>
@@ -66,7 +66,7 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-[#E7C19A]/10 pt-8">
+        <div className="border-t border-[#E7C19A]/20 pt-8">
           <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-gray-500 text-sm text-center md:text-left">
               © 2026 Desenvolvimento Humano Integral. Todos os direitos reservados.
@@ -80,6 +80,17 @@ export function Footer() {
             </p>
           </div>
         </div>
+      </div>
+      <div className='flex flex-col justify-center items-center text-white'>
+        <p>&lt; Desenvolvido por <a href='https://github.com/ManelPechim' className='italic text-purple-500 hover:text-white transition-all hover:scale-105'>ManelPechim</a> /&gt;</p>
+        <p className='flex justify-center items-center gap-1'>
+          <a href='https://github.com/ManelPechim'>
+            <img src='/github-white-icon.webp' className='size-6 hover:scale-105 transition-all'></img>
+          </a>
+          <a href='https://wa.me/5544984538946?text=Olá! Vim de um dos seus produtos, gostaria de saber seus serviços.' target='_blank' rel='nooper noreferrer'>
+            <img src='/whatsapp-logo.webp' className='size-7 hover:scale-105 transition-all'></img>
+          </a>
+        </p>
       </div>
     </footer>
   );

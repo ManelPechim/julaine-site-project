@@ -57,8 +57,7 @@ const pricingTiers = [
   */
 ];
 
-export function Pricing() {
-
+export default function Pricing() {
   return (
     <section id="pricing" className="py-15 md:py-18 bg-gradient-to-b from-[#1A1008] to-[#0A0A0A] relative overflow-hidden">
       {/* Decorative elements */}
@@ -141,9 +140,9 @@ export function Pricing() {
 
               {/* Tier Name */}
               <div className="text-center mb-4 mt-4">
-                <div className='mb-2 italic text-gradient'>
-                  <h3 className="text-2xl font-bold">{tier.name.split('&')[0]}</h3>
-                  <h3 className="text-2xl font-bold">{tier.name.split('&')[1]}</h3>
+                <div className='mb-2 text-2xl italic text-gradient font-extrabold'>
+                  <h3>{tier.name.split('&')[0]}</h3>
+                  <h3>{tier.name.split('&')[1]}</h3>
                 </div>
                 <p className="text-white text-sm uppercase font-semibold text-nowrap">{tier.subtitle.split('&')[0]}</p>
                 <p className="text-white font-medium text-nowrap text-xs uppercase underline underline-offset-3">{tier.subtitle.split('&')[1]}</p>

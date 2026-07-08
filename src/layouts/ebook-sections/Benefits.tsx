@@ -39,7 +39,7 @@ const benefits = [
   }
 ];
 
-export function Benefits() {
+export default function Benefits() {
   return (
     <section className="py-15 md:py-18 bg-[#0A0A0A] relative">
       <div className="max-w-7xl mx-auto px-2 lg:px-6">

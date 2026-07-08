@@ -1,38 +1,35 @@
-import { useState, useEffect } from 'react';
 import { Loading } from './components/ui/Loading';
+import NavHeader from './components/NavHeader.tsx';
+import Footer from './components/Footer.tsx';
+
 import { TooltipProvider } from '@radix-ui/react-tooltip';
+import { Suspense, lazy } from 'react';
 import { HelmetProvider } from 'react-helmet-async'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
+
+const SessaoDiagnosticaPage = lazy(() => import('./pages/SessaoDiagnosticaPage.tsx'));
+const EbookPage = lazy(() => import('./pages/E-BookPage.tsx'));
+const NotFound = lazy(() => import('./pages/NotFound.tsx'));
 
 const queryClient = new QueryClient();
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(false);
-  }, []);
-
-  if (loading) {
-    return <Loading />; 
-  };
-
   return (
     <HelmetProvider>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <BrowserRouter>
+          <Suspense fallback={<Loading />}>
+            <NavHeader />
             <Routes>
-              {/*<Route path="/" element={<Index />} />*/}
-              <Route path="/" element={<Index />} />
+              <Route path="/" element={<SessaoDiagnosticaPage />} />
+              <Route path='/ebook' element={<EbookPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </BrowserRouter>
+            <Footer />
+          </Suspense>
         </TooltipProvider>
       </QueryClientProvider>
     </HelmetProvider>

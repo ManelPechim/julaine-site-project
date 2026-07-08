@@ -1,6 +1,6 @@
-import { ArrowDown, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import ScrollIndicator from '../../components/ui/Scroll-Indicator';
 // import { useState, useEffect } from 'react';
-import Logo from '../ui/Logo';
 
 const scrollToPricing = () => {
   document.getElementById('pricing')?.scrollIntoView({ behavior: "smooth" });
@@ -9,10 +9,6 @@ const scrollToPricing = () => {
 const scrollToTransformation = () => {
   document.getElementById('transformation')?.scrollIntoView({ behavior: "smooth" });
 };
-
-const scrollToPainPoints = () => {
-  document.getElementById('pain-points')?.scrollIntoView({ behavior: "smooth" });
-}
 
 // // Configure a data final aqui (ano, mês-1, dia, hora, minuto, segundo)
 // const END_DATE = new Date(2026, 2, 15, 23, 59, 59); // 15 de março de 2026 às 23:59:59
@@ -40,7 +36,7 @@ const scrollToPainPoints = () => {
 //   return { days, hours, minutes, seconds };
 // };
 
-export function Hero() {
+export default function Hero() {
   // const [timeRemaining, setTimeRemaining] = useState<TimeRemaining>(calculateTimeRemaining());
 
   // useEffect(() => {
@@ -53,7 +49,7 @@ export function Hero() {
   // }, []);
 
   return (
-    <section className="min-h-screen relative z-10 overflow-hidden">
+    <main className="min-h-screen relative z-10 overflow-hidden">
       {/* Header CTA*/}
       {/* <header className='z-20 w-full flex gap-3 md:gap-5 py-2 lg:py-4 text-center items-center justify-center bg-gradient-to-b from-[#914830] to-[#BB7541] animate-glow-white-lg'>
         <span className="text-white text-sm md:text-lg uppercase font-medium">
@@ -82,7 +78,7 @@ export function Hero() {
         </div>
       </header> */}
 
-      <section className="flex flex-col lg:py-12 lg:flex-row items-center gap-5 md:gap-25 justify-center relative -z-10 overflow-hidden inset-shadow-[0px_-70px_100px_#0A0A0A]">
+      <section className="flex min-h-[91vh] flex-col lg:py-12 lg:flex-row items-center gap-5 md:gap-25 justify-center relative -z-10 overflow-hidden inset-shadow-[0px_-70px_100px_#0A0A0A]">
         {/*<header className="bg-orange-200 w-full p-6 z-0">
         </header>*/}
         {/* Background Image */}
@@ -91,11 +87,11 @@ export function Hero() {
         </div>
 
         {/* Content */}
-        <div className="flex flex-col items-center lg:items-stretch justify-start gap-4 lg:gap-6 px-2 py-4 lg:py-6 md:p-12 lg:mt-auto text-center lg:text-left">
+        <div className=" flex flex-col items-center lg:items-stretch justify-start gap-4 lg:gap-6 px-2 py-4 md: md:py-15 md:p-12 lg:mt-auto text-center lg:text-left">
           {/* Logo Placeholder */}
-          <header className="flex items-center w-35 lg:w-100 lg:h-20 lg:-mx-2 lg:mb-1">
+          {/* <header className="flex items-center w-35 lg:w-100 lg:h-20 lg:-mx-2 lg:mb-1">
             <Logo className='object-cover lg:w-80 lg:h-30' />
-          </header>
+          </header> */}
 
           <p className="text-[#E7C19A] text-shadow text-sm md:text-base font-medium tracking-wider uppercase">
             Você não precisa continuar assim
@@ -153,13 +149,10 @@ export function Hero() {
           
         </div>
 
-         {/* Scroll Indicator */}
-        <div 
-          className="flex items-center justify-self-center lg:absolute z-10 p-[7px] lg:top-12/13 lg:left-1/2 lg:-translate-x-1/2 border-[#E7C19A] border-2 rounded-4xl text-[#E7C19A] animate-bounce hover:bg-[#A85C42] hover:border-[#A85C42] ease-in-out transition-all cursor-pointer"
-          onClick={scrollToPainPoints}
-        >
-          <ArrowDown className="w-5 h-5 lg:w-6 lg:h-6 " />
-        </div>
+        {/* Scroll Indicator */}
+        <ScrollIndicator 
+          scrollTo='pain-points'
+          className='border-[#E7C19A] text-[#E7C19A] hover:bg-[#A85C42] hover:border-[#A85C42] '/>  
 
         {/* E-book Cover */}
         <div className='relative w-60 h-80 md:w-[280px] lg:w-[450px] justify-center items-center flex -z-10 animate-float-slow '>          
@@ -177,6 +170,6 @@ export function Hero() {
 
       </section>
 
-    </section >
+    </main >
   );
 }

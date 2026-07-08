@@ -13,7 +13,7 @@ const transformations = [
   "Tempo e energia recuperados para você mesma"
 ];
 
-export function Transformation() {
+export default function Transformation() {
   return (
     <section id="transformation" className="flex relative overflow-hidden py-8 bg-gradient-to-b from-[#0A0A0A] to-[#1A1008]">
       {/* Decorative elements */}

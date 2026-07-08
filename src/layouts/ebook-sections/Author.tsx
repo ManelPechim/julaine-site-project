@@ -1,5 +1,5 @@
 import { CheckCircle2, Instagram } from 'lucide-react';
-import InstagramLink from '../ui/InstagramLink';
+import InstagramLink from '../../components/ui/InstagramLink';
 
 const credentials = [
   "Especialista em Desenvolvimento Humano Integral",
@@ -8,7 +8,7 @@ const credentials = [
   "+ de 300 mulheres transformadas"
 ];
 
-export function Author() {
+export default function Author() {
   return (
     <section className="py-15 md:py-20 bg-[#0A0A0A] relative">
       <div className="max-w-6xl mx-auto px-6">

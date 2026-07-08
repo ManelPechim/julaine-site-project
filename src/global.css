@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: sdReveal 0.7s ease forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 12s ease-in-out infinite;
+}
+
+.animate-glow-white-img {
+  animation: glowWhiteIMG 2s ease-in-out infinite alternate;
+}
+
+.animate-glow-green-img {
+  animation: glowGreenIMG 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowWhiteIMG {
+  from {
+    box-shadow: 0 0 10px hsla(0, 0%, 100%, 0),
+                0 0 20px hsla(0, 0%, 100%, 0.2),
+                0 0 30px hsla(0, 0%, 100%, 0.4);
+  }
+  to {
+    box-shadow: 0 0 20px hsla(0, 0%, 100%, 0.5),
+                0 0 30px hsla(0, 0%, 100%, 0.4),
+                0 0 40px hsla(0, 0%, 100%, 0.3);
+  }
+}
+
+@keyframes glowGreenIMG {
+  from {
+    box-shadow: 0 0 10px hsla(0, 0%, 100%, 0),
+                0 0 20px #4F6F6344,
+                0 0 30px #4F6F6377;
+  }
+  to {
+    box-shadow: 0 0 20px #4F6F6380,
+                0 0 30px #4F6F6366,
+                0 0 40px #4F6F634d;
+  }
+}
